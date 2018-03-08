@@ -1,12 +1,116 @@
-@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
-	@font-face
-		font-family: $font-family
-		font-weight: $weight
-		font-style: $style
+@import '../_vars.sass'
 
-		@if $asset-pipeline == true 
-			src: font-url('#{$file-path}.eot')
-			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
-		@else
-			src: url('#{$file-path}.eot')
-			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+  @font-face
+    font-family: $font-family
+    font-weight: $weight
+    font-style: $style
+
+    @if $asset-pipeline == true
+      src: font-url('#{$file-path}.eot')
+      src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
+    @else
+      src: url('#{$file-path}.eot')
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+=title
+  font-family: $font-title
+  text-transform: uppercase
+  font-weight: 700
+
+=title--100
+  +title()
+  font-size: 100px
+  line-height: 47px
+
+=title--30
+  +title()
+  font-size: 30px
+  line-height: 30px
+  letter-spacing: 1px
+
+
+=title--12
+  +title()
+  font-size: 12px
+  line-height: 22px
+  letter-spacing: 1px
+
+=nav--30
+  +title()
+  font-size: 30px
+  line-height: 24px
+
+=text
+  font-family: $font-text
+  -moz-transform: scale(0.8, 1)
+  -webkit-transform: scale(0.8, 1)
+  -ms-transform: scale(0.8, 1)
+  font-weight: 700
+
+=text--24it
+  +text()
+  font-size: 24px
+  line-height: 47px
+  letter-spacing: 1px
+  font-style: italic
+  -moz-transform: scale(1, 1)
+  -webkit-transform: scale(1, 1)
+  -ms-transform: scale(1, 1)
+
+
+=text--18i
+  +text()
+  font-size: 18px
+  line-height: 30px
+  letter-spacing: 2px
+  font-style: italic
+
+
+=text--16
+  +text()
+  font-size: 16px
+  line-height: 24px
+  letter-spacing: 0.5px
+
+=text--16-rare
+  +text--16()
+  line-height: 47px
+  letter-spacing: 3px
+  -moz-transform: scale(1, 1)
+  -webkit-transform: scale(1, 1)
+  -ms-transform: scale(1, 1)
+  text-transform: uppercase
+
+=text--14
+  +text()
+  font-size: 14px
+  line-height: 30px
+  letter-spacing: 1px
+
+=text--14i
+  +text--14()
+  font-style: italic
+
+=text--14iu
+  +text--14i()
+  text-transform: uppercase
+
+=text--12
+  +text()
+  font-size: 12px
+  line-height: 30px
+  letter-spacing: 2px
+
+
+=text--10
+  +text()
+  font-size: 10px
+  line-height: 22px
+  letter-spacing: 1px
+
+
+
+
+
+

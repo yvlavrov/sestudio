@@ -45,6 +45,12 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 
+ul
+	list-style-type: none
+
+a:hover
+	text-decoration: none
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -57,4 +63,100 @@ body
 	background-color: $accent
 	color: #fff
 
+.header__tel
+	+text--16()
+	color: $white
+
+.header__mail
+	+text--16()
+	color: $white
+
+.nav__list
+	+title--30()
+
+.nav__item > a
+	color: $black
+
+.nav__item--footer > a
+	color: $white
+
+.description
+	color: $white
+
+.name
+	+title--100()
+
+.button
+	color: $white
+	border: none
+	border-radius: 3px
+	+text--24it()
+
+.button--black
+	background-color: rgba(10, 14, 19, .5)
+
+.button--rose
+	background-color: rgba(249, 246, 246, .5)
+
+.button--middle
+	+text--18i
+
+.work-hours
+	+text--16-rare
+	color: $white
+	background-color: $accent
+
+.section__title
+	+title--30()
+	color: $accent
+
+.section__lead
+	+text--16
+	color: $dark-red
+
+.features__text
+	+text--14
+	color: $white
+
+.services__title
+	+title--12()
+	color: $accent
+
+.services__description
+	+text--10
+	color: $black
+
+.footer__lead
+	+text--18i
+	color: $accent
+	transform: scale(1,1)
+	letter-spacing: 2px
+
+.contacts-item__title
+	+text--14iu
+	color: $accent
+
+.contacts-item__value
+	+text--14i
+	color: $black
+
+.contacts__note
+	+text--12
+	color: $accent
+
+.footer__rights
+	+text--10
+	color: $white
+
+.header__top
+	background-color: $accent
+
+.section--rose
+	background-color: $accent
+	.section__title
+		color: $white
+
+
+
 @import "media" // Всегда в конце
+

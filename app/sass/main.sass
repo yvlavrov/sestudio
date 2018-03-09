@@ -1,7 +1,6 @@
 @import "fonts"
 @import "libs"
 @import "vars"
-
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -69,25 +68,29 @@ a:hover
 
 .header__tel
 	+text--16()
+	transform: scale(1,1)
 	color: $white
 	position: relative
 	padding-left: 20px
+	.fas
+		font-size: 20px
 
-.header__tel:before
-		content: ''
-		width: 20px
-		height: 20px
-		position: absolute
-		background-image: url(../img/vk.svg)
-		left: 0
-		outline: 1px solid black
+.fab
+	font-size: 22px
+	color: $white
 
+.social__list
+	display: flex
+	> li
+		margin-left: 10px
 .header__mail
 	+text--16()
 	color: $white
 
+
+
 .nav__list
-	+title--30()
+	+nav--30()
 
 .nav__item > a
 	color: $black
@@ -115,6 +118,15 @@ a:hover
 
 .button--middle
 	+text--18i
+
+.button--small
+	+text--10
+
+.button--transparent
+	background-color: transparent
+	border: 1px solid $white
+	padding: 5px 30px
+	opacity: 0.6
 
 .work-hours
 	+text--16-rare
@@ -196,6 +208,7 @@ a:hover
 	background-image: url('../img/main.png')
 	background-repeat: no-repeat
 	-webkit-background-size: cover
+	background-position: center
 	background-size: cover
 	min-height: 600px
 	> div
@@ -216,6 +229,10 @@ a:hover
 	flex-basis: 100%
 	text-align: center
 
+.section--about
+	> div
+		flex-direction: column
+		align-items: stretch
 .features
 
 .features__text
@@ -232,8 +249,6 @@ a:hover
 		max-width: 525px
 		height: 100%
 		position: absolute
-
-
 	.features__img
 		background-image: url("../img/салон 3.png")
 		background-repeat: no-repeat
@@ -247,15 +262,87 @@ a:hover
 		right: 0
 
 .features--second
-	max-width: 720px
+	width: 720px
 	min-height: 230px
+	position: relative
+	top: -50px
+	z-index: 1
+	align-self: flex-end
 	.features__text
 		background-color: rgba(233, 10, 136, 0.85)
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		max-width: 501px
 	.features__img
 		background-image: url("../img/Салон2.png")
 		background-repeat: no-repeat
 		-webkit-background-size: cover
+
 		background-size: cover
-		max-width: 270px;
+		height: 100%
+		width: 270px
+		position: absolute
+		top: 0
+		left: 0
+
+.section--services
+	> div
+		flex-direction: column
+
+.services
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-column-gap: 20px
+	grid-row-gap: 20px
+
+.services__item
+	padding: 10px
+	background-color: #eeebeb
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	a
+		display: flex
+.services__img
+	margin-right: 20px
+	width: 195px
+	height: 140px
+
+.services__title
+	margin: 0
+
+.footer__top
+	>div
+		flex-direction: column
+
+.footer__lead
+	text-align: center
+
+.contacts
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-column-gap: 50px
+
+
+.contacts__list-item
+	margin-bottom: 20px
+
+.footer__middle
+	height: 180px
+	background-image: url("../img/footer.png")
+	background-repeat: no-repeat
+	background-position: center
+	-webkit-background-size: cover
+	background-size: cover
+	padding-top: 20px
+
+.footer__bottom
+	height: 65px
+
+.footer__rights
+	margin-right: auto
+
 @import "media" // Всегда в конце
 

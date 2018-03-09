@@ -51,6 +51,10 @@ ul
 a:hover
 	text-decoration: none
 
+.section__wrapper
+		max-width: 980px
+		margin: 0 auto
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -66,6 +70,17 @@ a:hover
 .header__tel
 	+text--16()
 	color: $white
+	position: relative
+	padding-left: 20px
+
+.header__tel:before
+		content: ''
+		width: 20px
+		height: 20px
+		position: absolute
+		background-image: url(../img/vk.svg)
+		left: 0
+		outline: 1px solid black
 
 .header__mail
 	+text--16()
@@ -104,7 +119,6 @@ a:hover
 .work-hours
 	+text--16-rare
 	color: $white
-	background-color: $accent
 
 .section__title
 	+title--30()
@@ -148,15 +162,100 @@ a:hover
 	+text--10
 	color: $white
 
-.header__top
-	background-color: $accent
-
 .section--rose
 	background-color: $accent
 	.section__title
 		color: $white
 
+.header__top
+	background-color: $accent
+	min-height: 52px
+
+.header__tel
+	margin-right: auto
+
+.header__bottom
+	min-height: 114px
+
+.flex
+	display: flex
+	align-items: stretch
+	> div
+		display: flex
+		flex-basis: 100%
+		align-items: center
+
+.nav
+	flex-grow: 1
+
+.nav__list
+	display: flex
+	justify-content: space-between
+
+.section--first
+	background-image: url('../img/main.png')
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	background-size: cover
+	min-height: 600px
+	> div
+		flex-direction: column
+		justify-content: center
+.work-hours
+	margin: 0
+	text-align: center
 
 
+.button--big
+	padding: 10px 30px
+
+.section__title
+	text-align: center
+
+.section__lead
+	flex-basis: 100%
+	text-align: center
+
+.features
+
+.features__text
+	border-radius: 8px
+	padding: 55px 30px
+	margin: 0
+	z-index: 1
+
+.features--first
+	min-height: 390px
+	position: relative
+	.features__text
+		background-color: rgba(120, 93, 115, 0.85)
+		max-width: 525px
+		height: 100%
+		position: absolute
+
+
+	.features__img
+		background-image: url("../img/салон 3.png")
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+		width: 700px
+		max-width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		right: 0
+
+.features--second
+	max-width: 720px
+	min-height: 230px
+	.features__text
+		background-color: rgba(233, 10, 136, 0.85)
+	.features__img
+		background-image: url("../img/Салон2.png")
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+		max-width: 270px;
 @import "media" // Всегда в конце
 

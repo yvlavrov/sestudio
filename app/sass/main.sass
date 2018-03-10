@@ -1,6 +1,8 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "./_mixins/_text"
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -46,6 +48,7 @@ body
 
 ul
 	list-style-type: none
+	padding: 0
 
 a:hover
 	text-decoration: none
@@ -87,10 +90,11 @@ a:hover
 	+text--16()
 	color: $white
 
-
+.nav--header
+	margin-left: 50px
 
 .nav__list
-	+nav--30()
+	+nav--20()
 
 .nav__item > a
 	color: $black
@@ -100,9 +104,13 @@ a:hover
 
 .description
 	color: $white
+	+subtitle--20
+	text-shadow: 0 2px rgba(0,0,0,0.12)
+	margin: 0
 
 .name
 	+title--100()
+	margin: 0px 0px 20px
 
 .button
 	color: $white
@@ -118,6 +126,8 @@ a:hover
 
 .button--middle
 	+text--18i
+	max-width: 320px
+	padding: 10px 30px
 
 .button--small
 	+text--10
@@ -143,6 +153,9 @@ a:hover
 .features__text
 	+text--14
 	color: $white
+
+.services
+	padding: 0
 
 .services__title
 	+title--12()
@@ -343,6 +356,49 @@ a:hover
 
 .footer__rights
 	margin-right: auto
+
+.slide
+	height: 460px
+	margin-right: 15px
+	margin-left: 15px
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	padding: 20px 50px
+	> div
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+
+.slide
+	background-image: url('../img/slider.png')
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center
+	filter: grayscale(100%)
+	transition: filter 0.5s ease
+
+.slide.slick-current
+	filter: grayscale(0%)
+
+.promo
+	+subtitle--20
+	text-shadow: 0 2px rgba(0,0,0,0.62)
+	color: $white
+	text-align: center
+
+.slick-prev
+	left: 100px
+	z-index: 1
+
+.slick-next
+	right: 100px
+	z-index: 1
+
 
 @import "media" // Всегда в конце
 

@@ -1,12 +1,13 @@
 =title
   font-family: $font-title
   text-transform: uppercase
-  font-weight: 700
+  font-weight: 100
 
 =title--100
   +title()
   font-size: 100px
   white-space: nowrap
+
 
 =title--30
   +title()
@@ -23,7 +24,7 @@
 
 =subtitle
   font-family: $font-bold
-  font-weight: 700
+
   text-transform: uppercase
   letter-spacing: 0.5px
 
@@ -42,14 +43,14 @@
   -moz-transform: scale(0.8, 1)
   -webkit-transform: scale(0.8, 1)
   -ms-transform: scale(0.8, 1)
-  font-weight: 700
+  font-weight: 100
 
 =text--24it
   +text()
   font-size: 24px
   line-height: 47px
   letter-spacing: 1px
-  font-style: italic
+  //font-style: italic
   -moz-transform: scale(1, 1)
   -webkit-transform: scale(1, 1)
   -ms-transform: scale(1, 1)
@@ -60,7 +61,7 @@
   font-size: 18px
   line-height: 30px
   letter-spacing: 2px
-  font-style: italic
+  //font-style: italic
 
 
 =text--16
@@ -86,7 +87,7 @@
 
 =text--14i
   +text--14()
-  font-style: italic
+  //font-style: italic
 
 =text--14iu
   +text--14i()

@@ -23,3 +23,37 @@ $('.slider').slick({
         }
     ]
 });
+
+function button() {
+    var btn = document.querySelector('.button--gradient')
+    btn.onmousemove = function (e) {
+        var x = e.pageX - btn.offsetLeft
+        var y = e.pageY - btn.offsetTop
+        btn.style.setProperty('--x', x + 'px')
+        btn.style.setProperty('--y', y + 'px')
+    }
+}
+button();
+
+$(document).ready(function () {
+    $("#menu, #menu2").on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 500 мс
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+
+$(function () {
+    $('#toTop').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+
+    });
+});

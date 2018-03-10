@@ -99,8 +99,12 @@ a:hover
 .nav__item > a
 	color: $black
 
-.nav__item--footer > a
-	color: $white
+.nav__item--footer
+	> a
+		color: $white
+		transition: color 0.3s ease
+		&:hover, &:focus, &:active
+			color: $black
 
 .description
 	color: $white
@@ -110,7 +114,7 @@ a:hover
 
 .name
 	+title--100()
-	margin: 0px 0px 20px
+	margin: 0 0 20px
 
 .button
 	color: $white
@@ -246,7 +250,10 @@ a:hover
 	> div
 		flex-direction: column
 		align-items: stretch
-.features
+
+.section--background
+	background: linear-gradient(180deg, $white 66%, $background )
+	box-shadow: inset 0px -16px 20px -10px rgba(0, 0, 0, 0.14)
 
 .features__text
 	border-radius: 8px
@@ -399,6 +406,63 @@ a:hover
 	right: 100px
 	z-index: 1
 
+
+
+.white-hover
+	text-shadow: none
+	color: $white
+	transition: text-shadow 0.1s ease
+
+.white-hover:hover, .white-hover:focus, .white-hover:active
+	color: $white
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55)
+	text-decoration: none !important
+
+.black-hover
+	background: none
+	transition: all 0.3s ease
+	color: $black
+
+.black-hover:hover, .black-hover:focus, .black-hover:active
+	background: linear-gradient(180deg, #7c104e 33%, $accent 50%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	text-decoration: none !important
+
+.button--gradient
+	position: relative
+	background-color: rgba(10, 14, 19, .5)
+	border: none
+	color: white
+	cursor: pointer
+	outline: none
+	overflow: hidden
+	box-shadow: none
+	transition: box-shadow .3s ease
+
+.button--gradient span
+	position: relative
+
+.button--gradient::before
+	--size: 0
+	content: ''
+	position: absolute
+	left: var(--x)
+	top: var(--y)
+	width: var(--size)
+	height: var(--size)
+	background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.2), transparent)
+	transform: translate(-50%, -50%)
+	transition: width 0.2s ease, height 0.2s ease
+
+.button--gradient:hover::before
+	--size: 200px
+
+.button--gradient:hover
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+a:focus
+	text-decoration: none
 
 @import "media" // Всегда в конце
 

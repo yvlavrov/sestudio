@@ -333,7 +333,7 @@ a:hover
 	text-overflow: ellipsis
 
 .overflower-long
-	flex-basis: 100%;
+	flex-basis: 100%
 
 //----------
 
@@ -374,7 +374,7 @@ a:hover
 	-webkit-background-size: cover
 	background-size: cover
 	background-position: center
-	position: absolute
+
 
 .features--first
 	min-height: 390px
@@ -393,6 +393,7 @@ a:hover
 		height: 100%
 		top: 0
 		right: 0
+        position: absolute
 
 .features--second
 	max-width: 720px
@@ -402,21 +403,18 @@ a:hover
 	top: -120px
 	z-index: 1
 	align-self: flex-end
+    display: flex
 	@media #{$tablet}
 		top: -50px
 	.features__text
 		background-color: rgba(233, 10, 136, 0.85)
-		position: absolute
-		top: 0
-		right: 0
 		height: 100%
 		max-width: 450px
 	.features__img
 		background-image: url("../img/Салон2.png")
-		width: 270px
+        max-width: 270px
 		height: 230px
-		top: 0
-		left: 0
+
 
 .section--services
 	padding-top: 40px

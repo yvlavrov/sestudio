@@ -83,8 +83,11 @@ a:hover
 	color: $white
 	position: relative
 	padding-left: 20px
+	white-space: nowrap
 	.fas
 		font-size: 20px
+	@media #{$phone}
+		padding-left: 0
 
 .fab
 	font-size: 22px
@@ -92,11 +95,20 @@ a:hover
 
 .social__list
 	display: flex
+	@media #{$phone}
+		display: none
 	> li
 		margin-left: 10px
+
+.logo
+	>img
+		width: 100px
+
 .header__mail
 	+text--16()
 	color: $white
+	@media #{$tablet}
+		display: none
 
 .nav--header
 	margin-left: 50px
@@ -107,22 +119,26 @@ a:hover
 .nav__item > a
 	color: $black
 
-.nav__item--footer
-	> a
+.nav--footer
+	a
 		color: $white
 		transition: color 0.3s ease
 		&:hover, &:focus, &:active
 			color: $black
-
+	@media #{$tablet}
+		display: none
 .description
 	color: $white
 	+subtitle--20
 	text-shadow: 0 2px rgba(0,0,0,0.12)
 	margin: 0
+	text-align: center
 
 .name
 	+title--100()
 	margin: 0 0 20px
+	@media #{$phone}
+
 
 .button
 	color: $white
@@ -206,6 +222,9 @@ a:hover
 .footer__rights
 	+text--10
 	color: $white
+	@media #{$phone}
+		display: none
+		margin-left: auto
 
 .section--rose
 	background-color: $accent
@@ -215,12 +234,22 @@ a:hover
 .header__top
 	background-color: $accent
 	min-height: 52px
+	> div
+		@media #{$phone}
+			justify-content: center
+
 
 .header__tel
 	margin-right: auto
+	@media #{$phone}
+		margin-right: 0
+
 
 .header__bottom
 	min-height: 114px
+	@media #{$phone}
+		min-height: 82px
+
 
 .flex
 	display: flex
@@ -233,6 +262,23 @@ a:hover
 .nav
 	flex-grow: 1
 
+.nav--header
+	display: block
+	@media #{$tablet}
+		display: none
+
+
+.nav--mm-menu
+	z-index: 3
+	.nav__list
+		flex-direction: column
+
+.hamburger.hamburger--collapse
+	display: none
+	@media #{$tablet}
+		display: block
+		margin-left: auto
+
 .nav__list
 	display: flex
 	justify-content: space-between
@@ -244,18 +290,55 @@ a:hover
 	background-position: center
 	background-size: cover
 	min-height: 600px
+	@media #{$phone}
+		min-height: 400px
+
 	> div
 		flex-direction: column
 		justify-content: center
-.work-hours
-	margin: 0
-	text-align: center
 
+.work-hours
+	height: 40px
+
+//----------
+.overflower
+  display: inline-block
+  overflow: hidden
+  box-sizing: border-box
+  max-width: 100%
+  height: 1.5em
+  line-height: 1.5em
+  white-space: nowrap
+  text-overflow: ellipsis
+  width: 100%
+  text-align: center
+
+.overflower-long
+	display: inline
+
+
+.overflower-short
+	display: none
+
+@supports (flex-wrap: wrap)
+	.overflower
+		display: inline-flex
+		flex-wrap: wrap
+
+.overflower-short
+	display: block
+	overflow: hidden
+	flex-grow: 1
+	width: 0
+	text-overflow: ellipsis
+
+.overflower-long
+	flex-basis: 100%;
+
+//----------
 
 .button--big
 	padding: 10px 30px
-
-
 
 .section__title
 	text-align: center
@@ -263,6 +346,9 @@ a:hover
 .section__lead
 	flex-basis: 100%
 	text-align: center
+	@media #{$phone}
+		margin-left: -53px
+		margin-right: -53px
 
 .section--about
 
@@ -278,51 +364,57 @@ a:hover
 	border-radius: 8px
 	padding: 55px 30px
 	margin: 0
+	margin-left: -53px
+	margin-right: -53px
 	z-index: 1
+
+.features__img
+	border-radius: 5px;
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center
+	position: absolute
 
 .features--first
 	min-height: 390px
 	position: relative
+	display: flex
 	.features__text
 		background-color: rgba(120, 93, 115, 0.85)
 		max-width: 525px
 		height: 100%
 		position: absolute
+		top: 0
 	.features__img
 		background-image: url("../img/салон 3.png")
-		background-repeat: no-repeat
-		-webkit-background-size: cover
-		background-size: cover
 		width: 700px
 		max-width: 100%
 		height: 100%
-		position: absolute
 		top: 0
 		right: 0
 
 .features--second
-	width: 720px
+	max-width: 720px
+	width: 100%
 	min-height: 230px
 	position: relative
-	top: -50px
+	top: -120px
 	z-index: 1
 	align-self: flex-end
+	@media #{$tablet}
+		top: -50px
 	.features__text
 		background-color: rgba(233, 10, 136, 0.85)
 		position: absolute
 		top: 0
 		right: 0
 		height: 100%
-		max-width: 501px
+		max-width: 450px
 	.features__img
 		background-image: url("../img/Салон2.png")
-		background-repeat: no-repeat
-		-webkit-background-size: cover
-
-		background-size: cover
-		height: 100%
 		width: 270px
-		position: absolute
+		height: 230px
 		top: 0
 		left: 0
 
@@ -377,8 +469,8 @@ a:hover
 
 .contacts__map
 	margin-right: 30px
-	//@media #{$desktop}
-	//	order: 2
+	@media #{$tablet}
+		display: none
 
 .contacts__list
 	margin: 0

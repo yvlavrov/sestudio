@@ -27,7 +27,9 @@
     <link rel="stylesheet" href="libs/slick-1.8.0/slick/slick.css">
     <link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css">
     <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="libs/jQuery.mmenu-master/dist/jquery.mmenu.all.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/hamburgers-master/dist/hamburgers.css">
 
 </head>
 
@@ -70,6 +72,21 @@
                     <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
+            <nav id="mmMenu" class="nav nav--mm-menu">
+                <ul class="nav__list">
+                    <li class="nav__item black-hover"><a href="#about">О нас</a></li>
+                    <li class="nav__item black-hover"><a href="#promo">Акции</a></li>
+                    <li class="nav__item black-hover"><a href="#services">Услуги</a></li>
+                    <li class="nav__item black-hover"><a href="#price">Цены</a></li>
+                    <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <a class="hamburger hamburger--collapse" type="button" href="#mmMenu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </a>
         </div>
     </section>
 </header>
@@ -85,7 +102,10 @@
     </section>
     <section class="section section--rose">
         <div class="section__wrapper">
-            <p class="work-hours">МЫ рады видеть вас каждый день с 10 до 22 часов!</p>
+            <p class="work-hours overflower">
+                <span class="overflower-short" aria-hidden="true" title="МЫ рады видеть вас каждый день с 10 до 22 часов!">С 10 до 22 без выходных!</span>
+                <span class="overflower-long">МЫ рады видеть вас каждый день с 10 до 22 часов!</span>
+            </p>
         </div>
     </section>
     <section class="section section--about flex section--background" id="about">
@@ -95,12 +115,12 @@
                 подходы,
                 зарекомендовавшие себя среди самых взыскательных клиентов</p>
             <div class="features features--first">
-                <p class="features__text">
+                <div class="features__text">
                     Салон предлагает все виды работ по уходу за волосами: стрижка, окраска, укладка, наращивание,
                     лечение,
                     СПА уход. Сложные прически, макияж для торжеств. Ламинирование ресниц, коррекция бровей. Все
                     виды
-                    маникюра и педикюра, уход и СПА процедуры рук и ног</p>
+                    маникюра и педикюра, уход и СПА процедуры рук и ног</div>
                 <div class="features__img"></div>
             </div>
             <div class="features features--second">
@@ -264,13 +284,13 @@
     </section>
     <section class="footer__middle section">
         <div class="section__wrapper">
-            <nav class="nav" id="menu2">
+            <nav class="nav nav--footer" id="menu2">
                 <ul class="nav__list">
-                    <li class="nav__item nav__item--footer"><a href="#about">О нас</a></li>
-                    <li class="nav__item nav__item--footer"><a href="#promo">Акции</a></li>
-                    <li class="nav__item nav__item--footer"><a href="#services">Услуги</a></li>
-                    <li class="nav__item nav__item--footer"><a href="#price">Цены</a></li>
-                    <li class="nav__item nav__item--footer"><a href="#contacts">Контакты</a></li>
+                    <li class="nav__item"><a href="#about">О нас</a></li>
+                    <li class="nav__item"><a href="#promo">Акции</a></li>
+                    <li class="nav__item"><a href="#services">Услуги</a></li>
+                    <li class="nav__item"><a href="#price">Цены</a></li>
+                    <li class="nav__item"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -295,6 +315,8 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="libs/jQuery.mmenu-master/dist/jquery.mmenu.all.js"></script>
+>
 <script type="text/javascript" src="libs/slick-1.8.0/slick/slick.min.js"></script>
 <script type="text/javascript" src="js/scripts.min.js"></script>
 

@@ -45,6 +45,14 @@ gulp.task('dist:css', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('js', function(){
+  return gulp.src('client/javascript/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(concat('scripts.min.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('watch', function() {
   var browserSyncConfig = require('./bs-config.js');
 

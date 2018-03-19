@@ -64,6 +64,9 @@ a:hover
 		@media #{$desktop}
 			padding-left: 30px
 			padding-right: 30px
+		@media #{$phone}
+			padding-left: 10px
+			padding-right: 10px
 
 .img-responsive
 	display: block
@@ -134,6 +137,7 @@ a:hover
 	margin: 0
 	text-align: center
 
+
 .name
 	+title--100()
 	margin: 0 0 20px
@@ -200,6 +204,9 @@ a:hover
 .services__description
 	+text--10
 	color: $black
+	@media #{$phone}
+		display: none
+
 
 .footer__lead
 	+text--18i
@@ -369,7 +376,7 @@ a:hover
 	z-index: 1
 
 .features__img
-	border-radius: 5px;
+	border-radius: 5px
 	background-repeat: no-repeat
 	-webkit-background-size: cover
 	background-size: cover
@@ -391,9 +398,9 @@ a:hover
 		width: 700px
 		max-width: 100%
 		height: 100%
+		position: absolute
 		top: 0
 		right: 0
-        position: absolute
 
 .features--second
 	max-width: 720px
@@ -403,17 +410,25 @@ a:hover
 	top: -120px
 	z-index: 1
 	align-self: flex-end
-    display: flex
+	display: flex
 	@media #{$tablet}
 		top: -50px
 	.features__text
 		background-color: rgba(233, 10, 136, 0.85)
 		height: 100%
-		max-width: 450px
+		max-width: 564px
+		position: absolute
+		top: 0
+		right: -4px
+		@media #{$phone}
+			right: 0
 	.features__img
 		background-image: url("../img/Салон2.png")
-        max-width: 270px
+		width: 270px
 		height: 230px
+		position: absolute
+		top: 0
+		left: 0
 
 
 .section--services
@@ -427,6 +442,8 @@ a:hover
 	grid-template-columns: 1fr 1fr
 	grid-column-gap: 20px
 	grid-row-gap: 20px
+	@media #{$phone}
+		grid-template-columns: 1fr
 
 .services__item
 	padding: 10px
@@ -446,6 +463,9 @@ a:hover
 	margin-right: 20px
 	width: 195px
 	height: 140px
+	@media #{$phone}
+		margin-right: 0
+		margin-bottom: 20px
 
 .services__title
 	margin: 0
@@ -503,6 +523,14 @@ a:hover
 	-moz-border-radius: 5px
 	border-radius: 5px
 	padding: 20px 50px
+	@media #{$phone}
+		margin-left: 0
+		margin-right: 0
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+		padding-left: 15px
+		padding-right: 15px
 	> div
 		width: 100%
 		height: 100%
@@ -510,6 +538,8 @@ a:hover
 		flex-direction: column
 		justify-content: flex-end
 		align-items: center
+		@media #{$phone}
+			justify-content: space-between
 
 .slide
 	background-image: url('../img/slider.png')
@@ -530,11 +560,11 @@ a:hover
 	text-align: center
 
 .slick-prev
-	left: 100px
+	left: 25px
 	z-index: 1
 
 .slick-next
-	right: 100px
+	right: 25px
 	z-index: 1
 
 

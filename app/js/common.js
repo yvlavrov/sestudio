@@ -66,6 +66,9 @@ jQuery(document).ready(function ($) {
         ],
         "onClick": {
             close: true
+        },
+        "navbar": {
+            add: false
         }
     });
 });

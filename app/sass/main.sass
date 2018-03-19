@@ -625,5 +625,26 @@ a:hover
 a:focus
 	text-decoration: none
 
+li.nav__item.black-hover.mm-listitem
+	flex-grow: 1
+	display: flex
+	> a
+		flex-grow: 1
+		text-align: center
+
+ul.nav__list.mm-listview
+	height: 100%
+	margin-top: 0
+
+.hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
 @import "media" // Всегда в конце
 

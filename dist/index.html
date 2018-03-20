@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#e90a88">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#e90a88">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e90a88">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <section class="header__top section flex">
+        <div class="section__wrapper">
+            <h5 class="hidden">Социальные сети и контакты</h5>
+            <a class="header__tel white-hover" href="tel: +74991482454"><i class="fas fa-phone-square"></i>
+                +7(499)148-24-54</a>
+            <a class="header__mail white-hover" href="mailto:s_e_studio@mail.ru">s_e_studio@mail.ru</a>
+            <div class="social social--header">
+                <ul class="social__list">
+                    <h6 class="hidden">Социальные сети</h6>
+                    <li><a href="#" class="white-hover"><span class="hidden">Вконтакте</span><i
+                            class="fab fa-vk"></i></a></li>
+                    <li><a href="#" class="white-hover"><span class="hidden">Facebook</span><i
+                            class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="white-hover"><span class="hidden">Instagram</span><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="white-hover"><span class="hidden">Одноклассники</span><i
+                            class="fab fa-odnoklassniki-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="header__bottom section flex">
+        <div class="section__wrapper">
+            <a class="logo" href="#">
+                <img src="img/logo.png" alt="S-E-Studio логотип">
+            </a>
+            <nav id="menu" class="nav nav--header">
+                <ul class="nav__list">
+                    <li class="nav__item black-hover"><a href="#about">О нас</a></li>
+                    <li class="nav__item black-hover"><a href="#promo">Акции</a></li>
+                    <li class="nav__item black-hover"><a href="#services">Услуги</a></li>
+                    <li class="nav__item black-hover"><a onClick="showSonlineWidget(sonlineWidgetOptions);" >Цены</a></li>
+                    <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <nav id="mmMenu" class="nav nav--mm-menu">
+                <ul class="nav__list">
+                    <li class="nav__item black-hover"><a href="#about">О нас</a></li>
+                    <li class="nav__item black-hover"><a href="#promo">Акции</a></li>
+                    <li class="nav__item black-hover"><a href="#services">Услуги</a></li>
+                    <li class="nav__item black-hover"><a onClick="showSonlineWidget(sonlineWidgetOptions);" >Цены</a></li>
+                    <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <a class="hamburger hamburger--collapse" type="button" href="#mmMenu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="section section--first flex">
+        <div class="section__wrapper">
+            <p class="description">Cтудия красоты, парикмахерского искусства и стиля</p>
+            <h1 class="name">Se СТУДИО</h1>
+            <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button
+            button--black button--big button--gradient">
+                <span>Записаться online</span></button>
+        </div>
+    </section>
+    <section class="section section--rose">
+        <div class="section__wrapper">
+            <p class="work-hours overflower">
+                <span class="overflower-short" aria-hidden="true" title="МЫ рады видеть вас каждый день с 10 до 22 часов!">С 10 до 22 без выходных!</span>
+                <span class="overflower-long">МЫ рады видеть вас каждый день с 10 до 22 часов!</span>
+            </p>
+        </div>
+    </section>
+    <section class="section section--about flex section--background" id="about">
+        <div class="section__wrapper">
+            <h2 class="section__title">О нас</h2>
+            <p class="section__lead">Наше высокотехнологичное оборудование, профессиональtная косметика, современные
+                подходы,
+                зарекомендовавшие себя среди самых взыскательных клиентов</p>
+            <div class="features features--first">
+                <div class="features__text">
+                    Салон предлагает все виды работ по уходу за волосами: стрижка, окраска, укладка, наращивание,
+                    лечение,
+                    СПА уход. Сложные прически, макияж для торжеств. Ламинирование ресниц, коррекция бровей. Все
+                    виды
+                    маникюра и педикюра, уход и СПА процедуры рук и ног</div>
+                <div class="features__img"></div>
+            </div>
+            <div class="features features--second">
+                <div class="features__img"></div>
+                <p class="features__text">Каждый день мы рады встречи с вами.
+                    Предварительная запись приветствуется!</p>
+            </div>
+    </section>
+    <section class="section section--slider section--background" id="promo">
+        <div class="section__wrapper section__wrapper--mob-fullwidth">
+            <h2 class="section__title">акции САЛОНА</h2>
+            <div class="slider">
+                <div class="slide slide__first">
+                    <div class="slide__wrapper">
+                        <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
+                    </div>
+                </div>
+                <div class="slide slide__second">
+                    <div class="slide__wrapper">
+                        <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
+                    </div>
+                </div>
+                <div class="slide slide__third">
+                    <div class="slide__wrapper">
+                        <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+    </section>
+    <section class="section section--services flex section--background" id="services">
+        <div class="section__wrapper">
+            <h2 class="section__title">Наши услуги</h2>
+            <ul class="services">
+                <li class="services__item">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
+                        <img class="services__img" src="img/services1.png" alt="">
+                        <div>
+                            <h4 class="services__title">Стрижки женские</h4>
+                            <span class="services__description"> Нам нравятся простые и
+                                удобные в повседневной жизни
+                                стрижки, а при окрашивании
+                                волос мы стремимся к
+                                натуральным оттенкам</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
+                        <img class="services__img" src="img/services2.png" alt="">
+                        <div>
+                            <h4 class="services__title">Стрижки мужские</h4>
+                            <span class="services__description">Преображаем настоящих
+                                мужчин
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
+                        <img class="services__img" src="img/services3.png" alt="">
+                        <div>
+                            <h4 class="services__title">Маникюр и педикюр</h4>
+                            <span class="services__description">Красивые и ухоженные ногти – немаловажная деталь нашего
+                                облика.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
+                        <img class="services__img" src="img/services4.png" alt="">
+                        <div>
+                            <h4 class="services__title">Брови и ресницы</h4>
+                            <span class="services__description">Мы подберём Вам красивую форму и оттенок, подходящий именно
+                                к
+                                Вашему лицу.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
+                        <img class="services__img" src="img/services5.png" alt="">
+                        <div>
+                            <h4 class="services__title">Макияж для торжеств</h4>
+                            <span class="services__description">Ваш макияж может быть легким и естественным или ярким и
+                                дерзким.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="#">
+                        <img class="services__img" src="img/services6.png" alt="">
+                        <div>
+                            <h4 class="services__title">СПА уход</h4>
+                            <span class="services__description">Дополнительные раслабляющие и лечебные поцедуры для рук и
+                                ног
+                                во время маникюра и педикюра Вас приятно удивят.</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--<section class="section section&#45;&#45;rose" id="price">-->
+        <!--<div class="section__wrapper">-->
+            <!--<h2 class="section__title">Цены на услуги</h2>-->
+            <!--<button class="button button&#45;&#45;middle button&#45;&#45;rose">Прайс-лист</button>-->
+        <!--</div>-->
+    <!--</section>-->
+</main>
+<footer class="footer">
+    <section class="footer__top flex" id="contacts">
+        <div class="section__wrapper">
+            <p class="footer__lead">Мы работаем, чтобы Вы были красивыми. <br>
+                Находимся рядом и готовы предложить Вам только лучшее.</p>
+            <div class="contacts">
+                <div class="contacts__map">
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af47f040a063f7498fccbc0a702c5fb2eb14abb8a65a66fa5ca54b5400994091e&amp;width=465&amp;height=440&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="">
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <a href="https://yandex.ru/maps/-/CBe2IHvsdC">
+                                <span class="contacts-item__title">Адрес салона красоты в Москве:</span><br>
+                                <span class="contacts-item__value">Площадь Победы, дом 1, корп. «Д»</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <a href="tel: +74991482454">
+                                <span class="contacts-item__title">телефон:</span><br>
+                                <span class="contacts-item__value">+7 (499) 148-24-54</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <a href="tel: +79101111111">
+                                <span class="contacts-item__title">WhatsApp / Viber / Telegram:</span><br>
+                                <span class="contacts-item__value">+7(910) 111-11-11</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <a href="mailto:s_e_studio@mail.ru">
+                                <span class="contacts-item__title">E-mail:</span><br>
+                                <span class="contacts-item__value">s_e_studio@mail.ru</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <span class="contacts__note">Перед посещением нашего салона
+запишитесь по телефону.</span><br>
+                            <span class="contacts__wifi"><span class="hidden">wi-fi</span><i class="fas fa-wifi"></i></span>
+                            <span class="contacts__pay"><i class="far fa-credit-card"></i><span class="hidden">оплата картой и наличными</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer__middle section">
+        <div class="section__wrapper">
+            <nav class="nav nav--footer" id="menu2">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about">О нас</a></li>
+                    <li class="nav__item"><a href="#promo">Акции</a></li>
+                    <li class="nav__item"><a href="#services">Услуги</a></li>
+                    <li class="nav__item"><a href="#price">Цены</a></li>
+                    <li class="nav__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="footer__bottom section section--rose flex">
+        <div class="section__wrapper">
+            <p class="footer__rights">2о18 / Все права защищены </p>
+            <button class="button button--small button--transparent" id="toTop">Наверх</button>
+            <div class="social social--footer">
+                <h6 class="hidden">Социальные сети</h6>
+                <ul class="social__list">
+                    <li><a href="#"><span class="hidden">Вконтакте</span><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><span class="hidden">Instagram</span><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><span class="hidden">Одноклассники</span><i class="fab fa-odnoklassniki-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<!--SONLINE WIDGETS-->
+
+<div class="son_wrapper">
+    <div class="son_outercircle"></div>
+    <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);">
+        <div class="son_circle"><br>Онлайн<br/> запись</div></a>
+</div>
+
+<div id="widgetSonline"></div>
+
+<!--END SONLINE WIDGETS-->
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/scripts.min.js"></script>
+
+<script type="text/javascript" src="https://sonline.su/js/widget3/widget3.js"></script>
+
+
+</body>
+</html>
+

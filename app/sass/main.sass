@@ -2,6 +2,8 @@
 @import "libs"
 @import "vars"
 @import "./_mixins/_text"
+@import "sonline"
+@import "mmMenu"
 
 *
 	-webkit-box-sizing: border-box
@@ -463,7 +465,7 @@ a:hover
 	margin-right: 20px
 	width: 195px
 	height: 140px
-	@media #{$phone}
+	@media #{$desktop}
 		margin-right: 0
 		margin-bottom: 20px
 
@@ -622,20 +624,6 @@ a:hover
 .button--gradient:hover
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
 
-a:focus
-	text-decoration: none
-
-li.nav__item.black-hover.mm-listitem
-	flex-grow: 1
-	display: flex
-	> a
-		flex-grow: 1
-		text-align: center
-
-ul.nav__list.mm-listview
-	height: 100%
-	margin-top: 0
-
 .hidden
 	position: absolute
 	width: 1px
@@ -645,6 +633,7 @@ ul.nav__list.mm-listview
 	padding: 0
 	clip: rect(0 0 0 0)
 	overflow: hidden
+
 
 @import "media" // Всегда в конце
 

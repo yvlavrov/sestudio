@@ -62,7 +62,7 @@
                     <li class="nav__item black-hover"><a href="#about">О нас</a></li>
                     <li class="nav__item black-hover"><a href="#promo">Акции</a></li>
                     <li class="nav__item black-hover"><a href="#services">Услуги</a></li>
-                    <li class="nav__item black-hover"><a href="#price">Цены</a></li>
+                    <li class="nav__item black-hover"><a onClick="showSonlineWidget(sonlineWidgetOptions);" >Цены</a></li>
                     <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -71,7 +71,7 @@
                     <li class="nav__item black-hover"><a href="#about">О нас</a></li>
                     <li class="nav__item black-hover"><a href="#promo">Акции</a></li>
                     <li class="nav__item black-hover"><a href="#services">Услуги</a></li>
-                    <li class="nav__item black-hover"><a href="#price">Цены</a></li>
+                    <li class="nav__item black-hover"><a onClick="showSonlineWidget(sonlineWidgetOptions);" >Цены</a></li>
                     <li class="nav__item black-hover"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -89,7 +89,7 @@
         <div class="section__wrapper">
             <p class="description">Cтудия красоты, парикмахерского искусства и стиля</p>
             <h1 class="name">Se СТУДИО</h1>
-            <button class="button
+            <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button
             button--black button--big button--gradient">
                 <span>Записаться online</span></button>
         </div>
@@ -130,19 +130,19 @@
                 <div class="slide slide__first">
                     <div class="slide__wrapper">
                         <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
-                        <button class="button button--black button--middle">Записаться сейчас</button>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
                     </div>
                 </div>
                 <div class="slide slide__second">
                     <div class="slide__wrapper">
                         <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
-                        <button class="button button--black button--middle">Записаться сейчас</button>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
                     </div>
                 </div>
                 <div class="slide slide__third">
                     <div class="slide__wrapper">
                         <p class="promo">маникюр с покрытием гель-лаком от 1000 р</p>
-                        <button class="button button--black button--middle">Записаться сейчас</button>
+                        <button onClick="showSonlineWidget(sonlineWidgetOptions);" class="button button--black button--middle">Записаться сейчас</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
             <h2 class="section__title">Наши услуги</h2>
             <ul class="services">
                 <li class="services__item">
-                    <a href="#">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
                         <img class="services__img" src="img/services1.png" alt="">
                         <div>
                             <h4 class="services__title">Стрижки женские</h4>
@@ -167,7 +167,7 @@
                     </a>
                 </li>
                 <li class="services__item">
-                    <a href="#">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
                         <img class="services__img" src="img/services2.png" alt="">
                         <div>
                             <h4 class="services__title">Стрижки мужские</h4>
@@ -178,7 +178,7 @@
                     </a>
                 </li>
                 <li class="services__item">
-                    <a href="#">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
                         <img class="services__img" src="img/services3.png" alt="">
                         <div>
                             <h4 class="services__title">Маникюр и педикюр</h4>
@@ -188,7 +188,7 @@
                     </a>
                 </li>
                 <li class="services__item">
-                    <a href="#">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
                         <img class="services__img" src="img/services4.png" alt="">
                         <div>
                             <h4 class="services__title">Брови и ресницы</h4>
@@ -199,7 +199,7 @@
                     </a>
                 </li>
                 <li class="services__item">
-                    <a href="#">
+                    <a onClick="showSonlineWidget(sonlineWidgetOptions);">
                         <img class="services__img" src="img/services5.png" alt="">
                         <div>
                             <h4 class="services__title">Макияж для торжеств</h4>
@@ -222,12 +222,12 @@
             </ul>
         </div>
     </section>
-    <section class="section section--rose" id="price">
-        <div class="section__wrapper">
-            <h2 class="section__title">Цены на услуги</h2>
-            <button class="button button--middle button--rose">Прайс-лист</button>
-        </div>
-    </section>
+    <!--<section class="section section&#45;&#45;rose" id="price">-->
+        <!--<div class="section__wrapper">-->
+            <!--<h2 class="section__title">Цены на услуги</h2>-->
+            <!--<button class="button button&#45;&#45;middle button&#45;&#45;rose">Прайс-лист</button>-->
+        <!--</div>-->
+    <!--</section>-->
 </main>
 <footer class="footer">
     <section class="footer__top flex" id="contacts">
@@ -294,8 +294,8 @@
             <p class="footer__rights">2о18 / Все права защищены </p>
             <button class="button button--small button--transparent" id="toTop">Наверх</button>
             <div class="social social--footer">
+                <h6 class="hidden">Социальные сети</h6>
                 <ul class="social__list">
-                    <h6 class="hidden">Социальные сети</h6>
                     <li><a href="#"><span class="hidden">Вконтакте</span><i class="fab fa-vk"></i></a></li>
                     <li><a href="#"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="#"><span class="hidden">Instagram</span><i class="fab fa-instagram"></i></a></li>
@@ -307,9 +307,24 @@
     </section>
 </footer>
 
+<!--SONLINE WIDGETS-->
+
+<div class="son_wrapper">
+    <div class="son_outercircle"></div>
+    <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);">
+        <div class="son_circle"><br>Онлайн<br/> запись</div></a>
+</div>
+
+<div id="widgetSonline"></div>
+
+<!--END SONLINE WIDGETS-->
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.min.js"></script>
+
+<script type="text/javascript" src="https://sonline.su/js/widget3/widget3.js"></script>
+
 
 </body>
 </html>

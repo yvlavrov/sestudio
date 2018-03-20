@@ -27,10 +27,10 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jQuery.mmenu-master/dist/jquery.mmenu.all.js',
-		'app/libs/slick-1.8.0/slick/slick.min.js',
+		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
+		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

@@ -52,10 +52,12 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
-
+	margin: 0
 ul
 	list-style-type: none
 	padding: 0
+a
+	text-decoration: none
 
 a:hover
 	text-decoration: none
@@ -562,12 +564,15 @@ a:hover
 	text-align: center
 
 .slick-prev
-	left: 25px
+	left: 100px
 	z-index: 1
-
+	@media #{$phone}
+		left: 25px
 .slick-next
-	right: 25px
+	right: 100px
 	z-index: 1
+	@media #{$phone}
+		right: 25px
 
 
 

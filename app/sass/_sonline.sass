@@ -4,8 +4,11 @@
   position: fixed
   bottom: 0
   right: 0
-  border: 0px solid #FF0000
+  border: 0px solid $sub-accent
   z-index: 9999
+  @media #{$phone}
+    display: none
+
 
 .son_wrapper a
   text-decoration: none
@@ -16,15 +19,15 @@
   border-radius: 250px
   font-size: 14px
   font-family: Play, sans-serif !important
-  color: #fff
+  color: white
   line-height: 25px
   text-align: center
-  background: #FF0000
+  background: $sub-accent
 
 
 @keyframes son_outercircle
   0%
-    transform: scale(1, 1)
+    transform: scale(1.4, 1.4)
     opacity: 1
 
   80%
@@ -40,12 +43,8 @@
   position: absolute
   width: 70px
   height: 70px
-  border: 5px solid #FF0000
+  border: 5px solid $sub-accent
   border-radius: 50%
-  animation: son_outercircle 2s infinite linear
+  animation: son_outercircle 3s infinite linear
   margin-top: 15px
   margin-left: 15px
-
-.serv-nav a:hover,
-.serv-nav .active a
-  background-color: $accent

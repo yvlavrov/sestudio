@@ -37,7 +37,6 @@ function button() {
 button();
 
 $(document).ready(function () {
-    debugger;
     $("#menu, #mmMenu").on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();

@@ -153,11 +153,13 @@ a:hover
 	color: $white
 	border: none
 	border-radius: 3px
+	cursor: pointer
 	+text--24it()
 
 .button--black
 	background-color: rgba(10, 14, 19, .5)
-
+	&:hover
+		color: #bfbfbf
 .button--rose
 	background-color: rgba(249, 246, 246, .5)
 
@@ -172,8 +174,11 @@ a:hover
 .button--transparent
 	background-color: transparent
 	border: 1px solid $white
-	padding: 5px 30px
+	padding: 4px 30px
 	opacity: 0.6
+	&:hover
+		background-color:  $white
+		color: $accent
 
 .work-hours
 	+text--16-rare

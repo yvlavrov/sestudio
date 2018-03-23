@@ -5,17 +5,45 @@
 
     <meta charset="utf-8">
 
-    <title>Title</title>
-    <meta name="description" content="">
+    <title>SE Studio - салон красоты</title>
+    <meta name="description" content="Салон предлагает все виды работ по уходу за волосами: стрижка, окраска, укладка, наращивание, лечение. Все виды маникюра и педикюра, уход и СПА процедуры рук и ног.">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://s-e-studio.ru/">
+    <meta property="og:title" content="SE Studio - салон красоты">
+    <meta property="og:image" content="http://s-e-studio.ru/img/main.png">
+    <meta property="og:description" content="Салон предлагает все виды работ по уходу за волосами: стрижка, окраска, укладка, наращивание, лечение. Все виды маникюра и педикюра, уход и СПА процедуры рук и ног.">
+    <meta property="og:site_name" content="SE Studio">
+    <meta property="og:locale" content="ru">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://s-e-studio.ru/">
+    <meta name="twitter:title" content="SE Studio - салон красоты">
+    <meta name="twitter:description" content="Салон предлагает все виды работ по уходу за волосами: стрижка, окраска, укладка, наращивание, лечение. Все виды маникюра и педикюра, уход и СПА процедуры рук и ног.">
+    <meta name="twitter:image" content="http://s-e-studio.ru/img/main.png">
+
+
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#e90a88">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#e90a88">
@@ -24,7 +52,6 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#e90a88">
     <link rel="stylesheet" href="css/main.min.css">
-
 </head>
 
 <body>
@@ -39,18 +66,18 @@
             <div class="social social--header">
                 <ul class="social__list">
                     <h6 class="hidden">Социальные сети</h6>
-                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
+<!--                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
                             class="hidden">Вконтакте</span><i
-                            class="fab fa-vk"></i></a></li>
+                            class="fab fa-vk"></i></a></li>-->
                     <li><a href="https://www.facebook.com/SE-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%BE-152014511589371/"
                            target="_blank" rel="noopener" class="white-hover"><span class="hidden">Facebook</span><i
                             class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
+  <!--                  <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
                             class="hidden">Instagram</span><i
                             class="fab fa-instagram"></i></a></li>
                     <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span class="hidden">Одноклассники</span><i
                             class="fab fa-odnoklassniki-square"></i></a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -286,7 +313,7 @@
                     <li class="nav__item"><a href="#about">О нас</a></li>
                     <li class="nav__item"><a href="#promo">Акции</a></li>
                     <li class="nav__item"><a href="#services">Услуги</a></li>
-                    <li class="nav__item"><a href="#price">Цены</a></li>
+                    <li class="nav__item"><a onClick="showSonlineWidget(sonlineWidgetOptions);" >Цены</a></li>
                     <li class="nav__item"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -300,18 +327,18 @@
                 <h6 class="hidden">Социальные сети</h6>
                 <ul class="social__list">
                     <h6 class="hidden">Социальные сети</h6>
-                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
-                            class="hidden">Вконтакте</span><i
-                            class="fab fa-vk"></i></a></li>
+                    <!--                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
+                                                class="hidden">Вконтакте</span><i
+                                                class="fab fa-vk"></i></a></li>-->
                     <li><a href="https://www.facebook.com/SE-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%BE-152014511589371/"
                            target="_blank" rel="noopener" class="white-hover"><span class="hidden">Facebook</span><i
                             class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
-                            class="hidden">Instagram</span><i
-                            class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span class="hidden">Одноклассники</span><i
-                            class="fab fa-odnoklassniki-square"></i></a>
-                    </li>
+                    <!--                  <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span
+                                              class="hidden">Instagram</span><i
+                                              class="fab fa-instagram"></i></a></li>
+                                      <li><a href="#" class="white-hover" target="_blank" rel="noopener"><span class="hidden">Одноклассники</span><i
+                                              class="fab fa-odnoklassniki-square"></i></a>
+                                      </li>-->
                 </ul>
             </div>
         </div>
